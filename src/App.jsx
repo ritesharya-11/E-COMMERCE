@@ -21,14 +21,14 @@ const App = () => {
       <SearchBar />
       <Routes>
          <Route path='/'element={<Home />}/>
-         <Route path='/Collection' element={<Collection/>}/>
-         <Route path='/About' element={<About />}/>
-         <Route path='/Contact' element={<Contact />}/>
-         <Route path='/Product' element={<Product />}/>
-         <Route path='/Cart' element={<Cart />}/>
-         <Route path='/Login' element={<Login />}/>
-         <Route path='/PlaceOrder' element={<Placeorder />}/>
-         <Route path='/Order' element={<Order />}/>
+         <Route path='/collection' element={<Collection/>}/>
+         <Route path='/about' element={<About />}/>
+         <Route path='/contact' element={<Contact />}/>
+         <Route path='/product' element={<Product />}/>
+         <Route path='/cart' element={<Cart />}/>
+         <Route path='/login' element={<Login />}/>
+         <Route path='/placeOrder' element={<Placeorder />}/>
+         <Route path='/order' element={<Order />}/>
         </Routes> 
         <Footer />
     </div>
