@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/Context';
 import { assets, products } from '../assets/assets';
+import RelatedProduct from '../components/RelatedProduct';
 
 const Product = () => {
 
@@ -92,8 +93,15 @@ const Product = () => {
           <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
 
         </div>
+        <div className='flex flex-col gap-4 border px-6 text-sm text-gray-500'>
+          <p>An e-commerce website is online platform that facilitates the buying and selling of product of service over the internet, it servers as a virtual marketplace werw business ns individual coan showcase thier product , intercat with customer ,and trnasactiion without need physicla persence. </p>
+          <p>E-commerce website is typically display products or services along with detailed descriptin,images,prices,and any avilable</p>
+
+        </div>
 
       </div>
+      {/* -------display related products */}
+      <RelatedProduct category={productData.category } subCategory={productData.subCategory} />
     </div>
   ): <div className='opcity-0'></div>
 
